@@ -1,0 +1,18 @@
+<h1>Saved</h1>
+<ul class="saved-tasks">
+  {{#each savedTasks as |tasks|}}
+    <li>
+      {{task.description}}
+    </li>
+  {{/each}}
+</ul>
+
+<h1>Pending</h1>
+<ul class="pending-tasks">
+  {{#each pendingTasks as |task|}}
+    <li>
+      {{task.description}}
+    </li>
+  {{/each}}
+</ul>
+<button type='button' onclick={{action 'addTask'}}>Add task</button>
